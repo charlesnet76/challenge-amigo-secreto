@@ -42,7 +42,7 @@ function sortearAmigo() {
     alert("Por favor, inserte un nombre antes de sortear");
   } else {
     let indiceAmigo = Math.floor(Math.random() * cantidadAmigos);
-    let resultadoHTML = document.querySelector("#resultado");
+    let resultadoHTML = document.querySelector("prueba a escojer#resultado");
     resultadoHTML.innerHTML = amigos[indiceAmigo];
   }
 }
