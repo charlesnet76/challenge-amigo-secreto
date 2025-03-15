@@ -50,6 +50,11 @@ function sortearAmigo() {
     let amigoSorteado = amigos[indiceAmigo];
     let resultadoHTML = document.querySelector("#resultado");
     resultadoHTML.textContent = `¡El amigo secreto es: ${amigoSorteado}!`;
+
+  // Limpiar campo y lista después de descubrir el amigo secreto
+document.querySelector("#amigo").value = "";
+amigos = [];
+mostrarListaAmigo();
   }
 }
 const botonAgregar = document.getElementById('botonAgregar');
