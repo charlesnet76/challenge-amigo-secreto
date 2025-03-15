@@ -47,3 +47,5 @@ function sortearAmigo() {
     resultado.textContent = `¡El amigo secreto es: ${amigoSorteado}!`;
   }
 }
+const botonAgregar = document.getElementById('botonAgregar');
+botonAgregar.addEventListener('click', agregarAmigo);
