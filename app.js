@@ -6,9 +6,14 @@ let amigos = [];
  */
 function agregarAmigo() {
   let nombreAmigo = document.getElementById("amigo").value;
-
+  
+  // Expresión regular para validar si contiene números o caracteres especiales
+  let regex = /[^a-zA-Z\s]/;
+  
   if (nombreAmigo.trim() === "") {
     alert("Por favor, inserte un nombre válido");
+  } else if (regex.test(nombreAmigo)) {
+    alert("El nombre no debe contener números ni caracteres especiales");
   } else {
     amigos.push(nombreAmigo);
     document.querySelector("#amigo").value = "";
