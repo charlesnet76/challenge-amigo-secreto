@@ -42,9 +42,9 @@ function sortearAmigo() {
     alert("Por favor, inserte un nombre antes de sortear");
   } else {
     let indiceAmigo = Math.floor(Math.random() * cantidadAmigos);
+    let amigoSorteado = amigos[indiceAmigo];
     let resultadoHTML = document.querySelector("#resultado");
-    //resultadoHTML.innerHTML = amigos[indiceAmigo];
-    resultado.textContent = `¡El amigo secreto es: ${amigoSorteado}!`;
+    resultadoHTML.textContent = `¡El amigo secreto es: ${amigoSorteado}!`;
   }
 }
 const botonAgregar = document.getElementById('botonAgregar');
